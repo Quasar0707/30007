@@ -14,7 +14,7 @@ using namespace sokolov;
 int main()
 {
   std::system("chcp 1251 > nul"); // > nul - text is not displayed
-  setlocale(LC_ALL, "");
+  setlocale(LC_ALL, "rus");
 
   Dictionary dictionary;
   int choice = -1;
