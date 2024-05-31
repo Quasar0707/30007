@@ -7,7 +7,7 @@ bool sokolov::isOKstring(std::string& str)
 
 void sokolov::toLowerStr(std::string& str)
 {
-  std::transform(str.begin(), str.end(), str.begin(), ::tolower); //
+  std::transform(str.begin(), str.end(), str.begin(), ::tolower); //applying a function to each element
 }
 
 bool sokolov::readAddLine(Dictionary& dict, std::string& line)
@@ -80,7 +80,7 @@ bool sokolov::Dictionary::add(std::string& key, int count)
 bool sokolov::Dictionary::deleteWord(std::string& key)
 {
   sokolov::toLowerStr(key);
-  return dictionary_.erase(key) != 0; //
+  return dictionary_.erase(key) != 0; //erase - returns count of deleted items
 }
 
 void sokolov::Dictionary::print() const

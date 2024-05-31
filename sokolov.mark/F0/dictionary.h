@@ -17,8 +17,8 @@ namespace sokolov
 
     friend bool isOKstring(std::string& str);
     friend void toLowerStr(std::string& str);
-    friend bool readAddLine(Dictionary& dict, std::string& line); //обьяснить почему именно дружественные функции
-    friend void findTop3(Dictionary& dict, std::vector<std::pair<std::string, int>>& top3);
+    friend bool readAddLine(Dictionary& dict, std::string& line);
+    friend void findTop3(Dictionary& dict, std::vector<std::pair<std::string, int>>& top3); //there must be a friend(becouse using private zone)
 
   public:
     using iterator = std::map<std::string, int>::iterator;

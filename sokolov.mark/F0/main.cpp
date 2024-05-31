@@ -121,7 +121,7 @@ int main()
       case(5):
       {
         std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');//clear std::cin before read
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //clear std::cin before read
 
         std::cout << "Введите слово для удаления: ";
         std::string word = "";
@@ -141,7 +141,7 @@ int main()
       case(6):
       {
         std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');//clear std::cin before read
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); //clear std::cin before read
 
         std::cout << "Введите слово для поиска: ";
         std::string word = "";
