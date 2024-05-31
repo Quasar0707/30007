@@ -7,7 +7,7 @@ bool sokolov::isOKstring(std::string& str)
 
 void sokolov::toLowerStr(std::string& str)
 {
-  std::transform(str.begin(), str.end(), str.begin(), ::tolower); //понять
+  std::transform(str.begin(), str.end(), str.begin(), ::tolower); //
 }
 
 bool sokolov::readAddLine(Dictionary& dict, std::string& line)
@@ -35,7 +35,7 @@ bool sokolov::readAddLine(Dictionary& dict, std::string& line)
 
 void sokolov::findTop3(Dictionary& dict, std::vector<std::pair<std::string, int>>& top3)
 {
-  for (auto& i : dict.dictionary_) 
+  for (auto& i : dict.dictionary_)
   {
     for (int j = 0; j < top3.size(); j++)
     {
@@ -80,7 +80,7 @@ bool sokolov::Dictionary::add(std::string& key, int count)
 bool sokolov::Dictionary::deleteWord(std::string& key)
 {
   sokolov::toLowerStr(key);
-  return dictionary_.erase(key) != 0; //понять
+  return dictionary_.erase(key) != 0; //
 }
 
 void sokolov::Dictionary::print() const
@@ -99,21 +99,6 @@ sokolov::Dictionary::const_iterator sokolov::Dictionary::search(std::string& key
   return dictionary_.find(key);
 }
 
-size_t sokolov::Dictionary::getsize() const
-{
-  return dictionary_.size();
-}
-
-sokolov::Dictionary::iterator sokolov::Dictionary::getbegin()
-{
-  return dictionary_.begin();
-}
-
-sokolov::Dictionary::iterator sokolov::Dictionary::getend()
-{
-  return dictionary_.end();
-}
-
 sokolov::Dictionary::const_iterator sokolov::Dictionary::getcbegin() const
 {
   return dictionary_.cbegin();
@@ -123,5 +108,3 @@ sokolov::Dictionary::const_iterator sokolov::Dictionary::getcend() const
 {
   return dictionary_.cend();
 }
-
-

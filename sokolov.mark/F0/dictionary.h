@@ -31,9 +31,6 @@ namespace sokolov
     void print() const;
 
     const_iterator search(std::string& key) const;
-    size_t getsize() const;
-    iterator getbegin();
-    iterator getend();
     const_iterator getcbegin() const;
     const_iterator getcend() const;
   };
